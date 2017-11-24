@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#39b98a"
+    tools:context="com.example.layout.login.MainActivity">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="26dp"
+        android:id="@+id/linearLayout">
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="#f9eeee"
+            android:ems="10"
+            android:text="Email"
+            android:layout_marginBottom="50dp"/>
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="#f9eeee"
+            android:ems="10"
+            android:text="Password"
+            android:layout_marginBottom="50dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="167dp"
+        android:id="@+id/linearLayout2">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginTop="23dp"
+        android:text="Login" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="167dp"></LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="39dp"
+        android:textSize="25dp"
+        android:textColor="#000"
+        android:gravity="center"
+        android:text="Not a member? Sign up now" />
+</RelativeLayout>
+    <!--
+    RelativeLayout enables you to specify how child views are positioned relative to each other. The position of each view can be
+     specified as relative to sibling elements or relative to the parent.
+    LinearLayout is a view group that aligns all children in either vertically or horizontally.
+       The TextView is an Android control used to build the GUI and it have various attributes
+       ID-Any View object may have an integer ID associated with it, to uniquely identify the View within the tree.
+       When the application is compiled, this ID is referenced as an integer, but the ID is typically assigned in the layout XML file
+       as a string, in the id attribute.This is an XML attribute common to all View objects (defined by the View class) and you will use
+       it very often
+       wrap_content tells your view to size itself to the dimensions required by its content.
+       match_parent tells your view to become as big as its parent view group will allow.
+       gravity means the postion of textview
+       background means color of the screen
+       textColor means color of the text
+       textSize means size of the text
+       -->
